@@ -17,7 +17,6 @@ namespace AndroidtestUI
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
             registerUIElements();
-
         }
 
         private void registerUIElements() {
