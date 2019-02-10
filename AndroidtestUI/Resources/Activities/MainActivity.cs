@@ -39,7 +39,17 @@ namespace AndroidtestUI
 
         void LoginBtn_Click(object sender, System.EventArgs e)
         {
-
+            Android.App.AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+            AlertDialog alert = dialog.Create();
+            alert.SetTitle("Title");
+            alert.SetMessage("Complex Alert");
+            //alert.SetIcon(Resource.Drawable.alert);
+            alert.SetButton("OK", (c, ev) =>
+            {
+                // Ok button click task  
+            });
+            alert.SetButton2("CANCEL", (c, ev) => { });
+            alert.Show();
         }
 
     }
